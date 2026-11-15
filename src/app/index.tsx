@@ -63,6 +63,13 @@ export default function HomeScreen() {
           </TouchableOpacity>
         )}
       />
+
+      <TouchableOpacity
+        style={styles.productsBtn}
+        onPress={() => router.push("/products")}
+      >
+        <Text style={styles.productsBtnText}>Go to Products</Text>
+      </TouchableOpacity>
     </View>
   );
 }
@@ -86,5 +93,15 @@ const styles = StyleSheet.create({
     backgroundColor: "#e0e0e0",
     marginBottom: 10,
     borderRadius: 8,
+  },
+  productsBtn: {
+    backgroundColor: "skyblue",
+    padding: 15,
+    borderRadius: 8,
+    marginBottom: 20,
+  },
+  productsBtnText: {
+    fontSize: 18,
+    fontWeight: "bold",
   },
 });
